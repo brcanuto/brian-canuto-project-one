@@ -6,14 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beach Stay</title>
     
+    <!-- Google Fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display+SC&display=swap" rel="stylesheet">    
 
+    <!-- Font Awesome CDN -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
+    <header class="backgroundHome">
         <nav>
             <div>
                 <h2>Beachstays</h2>
@@ -33,7 +40,7 @@
     <!-- Feature Article -->
 
     <article>
-        <h3>Visit Guyana</h3>
+        <h3 class="blogHeading">Visit Guyana</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat eaque voluptates quis, doloremque voluptate aspernatur adipisci. Eum quo sit ad dolorem eveniet quidem minus deleniti enim sapiente consequatur, veritatis repudiandae?</p>
         <button class="findOutMore">Find Out More</button>
     </article>
@@ -52,20 +59,24 @@
 
     <!-- About -->
     
-    <section>
+    <section id="about">
         <div>
+            <i class="fas fa-home"></i>
             <h3>Beach Houses</h3>
             <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat.</p>
         </div>
         <div>
+            <i class="fas fa-users"></i>
             <h3>Community</h3>
             <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat.</p>
         </div>
         <div>
+            <i class="fas fa-file"></i>
             <h3>Blog</h3>
             <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat.</p>
         </div>
         <div>
+            <i class="fas fa-phone"></i>
             <h3>Get in Touch</h3>
             <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat.</p>
         </div>
@@ -89,7 +100,7 @@
             <button>Read More</button>
         </article>
         <aside>
-            <img src="/styles/assets/right-image.jpg" alt="">
+            <img src="./styles/assets/right-image.jpg" alt="stunning coast with cliffs, white sands, and clear water">
             <div class="backgroundSquare"></div>
         </aside>
     </section>
@@ -97,7 +108,7 @@
     <!-- Footer section -->
 
     <section>
-        <img src="/styles/assets/banner-image.jpg" alt="topdown view of the resort with a beach with white sands and clear water">
+        <img src="./styles/assets/banner-image.jpg" alt="topdown view of the resort with a beach with white sands and clear water">
     </section>
 
     <div>
@@ -106,7 +117,7 @@
         <button class="findOutMore">Find Out More</button>
     </div>
     <div class="copyrightMsg">
-        <p>Copyright <i class="fal fa-copyright"></i> 2021 Juno College</p>
+        <p>Copyright <i class="far fa-copyright"></i> 2021 Juno College</p>
     </div>
 </body>
 </html>
