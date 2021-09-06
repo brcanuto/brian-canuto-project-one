@@ -1,0 +1,175 @@
+
+/* Setup Snippet */
+@import "normalize";
+@import "variables";
+@import "nav";
+
+/* This is where the css starts */
+
+/* ===================================
+GENERAL STUFF
+=====================================*/
+
+body {
+    font-size: 125%;
+}
+
+.wrapper {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+
+/* ===================================
+TEXT STUFF
+=====================================*/
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+nav {
+    font-family: $baseFont;
+}
+
+.backgroundHome h1,
+.logo,
+button {
+    font-family: $accentFont;
+    font-style: italic;
+    font-weight: 900;
+}
+
+
+h1 {
+    color: #fff;
+}
+
+
+.backgroundHome h1 {
+    color: $accentColor;
+    font-size: 5.56rem;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.backgroundBlog h1,
+.backgroundContact h1 {
+    font-weight: bold;
+    font-size: 4.35rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.45rem;
+}
+
+.backgroundHome h2 {
+    font-weight: bold;
+    line-height: 2.9rem;
+    letter-spacing: 0.335rem;
+    font-size: 3.1rem;
+    color: $textHeadingColor;
+}
+
+.blogHeading{
+    font-weight: bold;
+    font-size: 1.75rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.19rem;
+    color: $textHeadingColor;
+}
+
+.about h3 {
+    font-size: 1.5rem;
+    letter-spacing: 0.16rem;
+}
+
+.articleSection .blogHeading{
+    color: $accentColor;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.1rem;
+}
+
+nav {
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.6rem;
+}
+
+button {
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.6rem;
+    letter-spacing: 0.05rem;
+}
+
+.logo {
+    color: $primaryColor;
+    font-size: 1.73rem;
+}
+
+/* ===================================
+NAV STUFF
+=====================================*/
+
+header{
+    background-size: cover;
+    // display: flex;
+}
+
+.backgroundHome {
+    background: url(./assets/home-image-1.jpg) no-repeat;
+        .logo{
+            color: $primaryColor;
+            font-size: 1.73rem;
+        }
+}
+
+ .backgroundBlog {
+     background: url(./assets/blog-image-1.jpg) no-repeat;
+ }
+
+ .backgroundContact {
+     background: url(./assets/contact-image-1.jpg) no-repeat;
+ }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        
+        li {
+            list-style: none;
+            color: #fff;
+            margin: 0 0.5rem;
+            padding: 0.6rem;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.backgroundHome li:first-child,
+.backgroundBlog li:nth-child(3),
+.backgroundContact li:last-child {
+    color: $primaryColor;
+}
+
+
+a:visited {
+    color: inherit;
+}
+
+
+  
