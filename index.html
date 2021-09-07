@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beach Stay</title>
+    <title>Beachstay</title>
     
     <!-- Google Fonts -->
 
@@ -21,40 +21,59 @@
 </head>
 <body>
     <header class="backgroundHome">
-        <nav class="wrapper">
-            <div>
-                <h2 class="logo">Beachstays</h2>
+
+        <!-- <div >     -->
+            <nav class="wrapper gridItem1">
+                <div>
+                    <h2 class="logo">Beachstays</h2>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="gridItem2">
+                <h2>welcome to</h2>
+                <h1>Beachstays</h1>
             </div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <img src="./styles/assets/header-box.jpg" alt="Sunglasses resting on a beach on a sunny day">
-        <h2>welcome to</h2>
-        <h1>Beachstays</h1>
+
+            <img class="gridItem3"src="./styles/assets/header-box.jpg" alt="Sunglasses resting on a beach on a sunny day">
+        <!-- </div> -->
+
+
     </header>
 
     <!-- Feature Article -->
-
-    <article>
-        <h3 class="blogHeading">Visit Guyana</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat eaque voluptates quis, doloremque voluptate aspernatur adipisci. Eum quo sit ad dolorem eveniet quidem minus deleniti enim sapiente consequatur, veritatis repudiandae?</p>
-        <button class="findOutMore">Find Out More</button>
-    </article>
-    <aside>
-        <div></div>
-        <img src="./styles/assets/small-box.jpg" alt="view from inside the hotel room where you can see the clear water and mountains">
-    </aside>
-
+    <div class="featureArticle wrapper">
+        <article>
+        <div class="featureArticleGrid1">
+                <h3 class="blogHeading">Visit Guyana</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend.Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis.</p>
+                <button class="findOutMore">Find Out More</button>
+            </div>
+        </article>
+        <aside>
+            <div>
+                <img src="./styles/assets/small-box.jpg" alt="view from inside the hotel room where you can see the clear water and mountains">
+            </div>
+        </aside>
+    </div>
     <!-- Gallery -->
 
-    <section>
-        <div><img src="./styles/assets/gallery-image1.jpg" alt="lakeside view of the lodging during sunset"></div>
-        <div><img src="./styles/assets/gallery-image2.jpg" alt="entrance to one of the lodgings during dusk"></div>
-        <div><img src="./styles/assets/gallery-image3.jpg" alt="one of the lodgings surrounded by tropical trees on an overcast day"></div>
+    <section class="gallery">
+        <div class="gridContainer1 wrapper">
+            <div>
+                <img src="./styles/assets/gallery-image1.jpg" alt="lakeside view of the lodging during sunset">
+            </div>
+            <div>
+                <img src="./styles/assets/gallery-image2.jpg" alt="entrance to one of the lodgings during dusk">
+            </div>
+            <div>
+                <img src="./styles/assets/gallery-image3.jpg" alt="one of the lodgings surrounded by tropical trees on an overcast day">
+            </div>
+        </div>
     </section>
 
     <!-- About -->
