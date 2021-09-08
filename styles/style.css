@@ -254,7 +254,8 @@ a:visited {
   color: inherit;
 }
 
-.findOutMore {
+.findOutMore,
+.readMore {
   background-color: #063974;
   color: #fff;
   border: none;
@@ -327,6 +328,7 @@ h1 {
 .about h3 {
   font-size: 1.5rem;
   letter-spacing: 0.16rem;
+  color: #0c5f4c;
 }
 
 .articleSection .blogHeading {
@@ -364,7 +366,6 @@ button {
 NAV STUFF
 =====================================*/
 header {
-  background-size: cover;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
@@ -372,6 +373,9 @@ header {
 header img {
   display: inline;
   margin-top: 9rem;
+  max-width: initial;
+  position: relative;
+  top: 2rem;
 }
 header .gridItem3 {
   grid-row: 2/span 2;
@@ -386,6 +390,8 @@ header .gridItem2 {
 
 .backgroundHome {
   background: url(./assets/home-image-1.jpg) no-repeat;
+  background-size: cover;
+  max-height: 50rem;
 }
 .backgroundHome .logo {
   color: #50E3C2;
@@ -438,7 +444,8 @@ FEATURE ARTICLE STUFF
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-gap: 7rem;
-  margin-bottom: 11rem;
+  margin-bottom: 8rem;
+  margin-top: 6rem;
 }
 .featureArticle .featureArticleGrid1 {
   margin-top: 5rem;
@@ -449,6 +456,7 @@ FEATURE ARTICLE STUFF
 .featureArticle img {
   -webkit-box-shadow: -0.8rem 1.2rem #50E3C2;
           box-shadow: -0.8rem 1.2rem #50E3C2;
+  margin-top: 5rem;
 }
 
 /* ===================================
@@ -472,4 +480,161 @@ GALLERY STUFF
 }
 .gallery .gridContainer1 img {
   max-width: 100%;
+}
+
+/* ===================================
+ABOUT STUFF
+=====================================*/
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  padding-top: 3rem;
+  padding-bottom: 8rem;
+}
+.about div {
+  padding: 2rem;
+}
+.about div i {
+  color: #fff;
+}
+.about .iconBorder {
+  padding: 1.5rem;
+  position: relative;
+  top: 2.3rem;
+  right: 4rem;
+}
+
+.iconBorder {
+  width: 0.25rem;
+  height: 0.25rem;
+  background: #50E3C2;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.iconBorder i {
+  font-size: 1.25rem;
+}
+
+/* ===================================
+ARTICLE STUFF
+=====================================*/
+.articleSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  background: #d2f9f1;
+}
+.articleSection .articleSectionGrid1 img {
+  position: relative;
+  -webkit-box-shadow: 1.2rem 1.3rem #50E3C2;
+          box-shadow: 1.2rem 1.3rem #50E3C2;
+  bottom: 1.5rem;
+}
+.articleSection .articleSectionGrid4 img {
+  position: relative;
+  -webkit-box-shadow: -1.2rem 1.3rem #50E3C2;
+          box-shadow: -1.2rem 1.3rem #50E3C2;
+  top: 1.5rem;
+}
+
+.articleSectionGrid1,
+.articleSectionGrid2,
+.articleSectionGrid3,
+.articleSectionGrid4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.articleSectionGrid2 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 8rem;
+}
+
+.articleSectionGrid3 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 8rem;
+  text-align: right;
+}
+
+.articleSectionGrid4 {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.readMore {
+  margin-top: 1rem;
+}
+
+/* ===================================
+FOOTER FOR HOME PAGE STUFF
+=====================================*/
+.bannerImage {
+  background: url(./assets/banner-image.jpg) no-repeat;
+  background-size: cover;
+  height: 30rem;
+}
+
+.referralProgram {
+  padding: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.referralProgram .blogHeading {
+  text-align: center;
+}
+.referralProgram p {
+  text-align: center;
+  margin: 1rem 6rem;
+}
+.referralProgram .findOutMore {
+  margin: 1rem;
+}
+
+.copyrightMsg {
+  text-align: center;
+  background: #2c2c2c;
+  color: #fff;
 }

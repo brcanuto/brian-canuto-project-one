@@ -25,7 +25,8 @@ a:visited {
     color: inherit;
 }
 
-.findOutMore {
+.findOutMore,
+.readMore {
     background-color: #063974;
     color: #fff;
     border: none;
@@ -99,6 +100,7 @@ h1 {
 .about h3 {
     font-size: 1.5rem;
     letter-spacing: 0.16rem;
+    color: $textHeadingColor
 }
 
 .articleSection .blogHeading{
@@ -137,13 +139,15 @@ NAV STUFF
 =====================================*/
 
 header{
-    background-size: cover;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     img {
         display: inline;
         margin-top: 9rem;
+        max-width: initial;
+        position: relative;
+        top: 2rem;
     }
     .gridItem3{
         grid-row: 2 / span 2;
@@ -159,6 +163,8 @@ header{
 
 .backgroundHome {
     background: url(./assets/home-image-1.jpg) no-repeat;
+    background-size: cover;
+    max-height: 50rem;
         .logo{
             color: $primaryColor;
             font-size: 1.73rem;
@@ -210,7 +216,8 @@ FEATURE ARTICLE STUFF
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-gap: 7rem;
-    margin-bottom: 11rem;
+    margin-bottom: 8rem;
+    margin-top: 6rem;
     .featureArticleGrid1{
         margin-top: 5rem;
         p, button{
@@ -220,6 +227,7 @@ FEATURE ARTICLE STUFF
     img {
         // filter: drop-shadow(4px 10px 30px $primaryColor)
         box-shadow: -0.8rem 1.2rem $primaryColor;
+        margin-top: 5rem;
     }
 }
 
@@ -243,3 +251,131 @@ GALLERY STUFF
         }
     }
 }
+
+/* ===================================
+ABOUT STUFF
+=====================================*/
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+
+    div {
+        padding: 2rem;
+        i{
+            color: #fff;
+        }
+    }
+    .iconBorder{
+        padding: 1.5rem;
+        position: relative;
+        top: 2.3rem;
+        right: 4rem;
+    }
+}
+
+.iconBorder {
+    width: 0.25rem;
+    height: 0.25rem;
+    background: $primaryColor;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i{
+        font-size: 1.25rem;
+    }
+}
+
+
+/* ===================================
+ARTICLE STUFF
+=====================================*/
+
+.articleSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    background: $softBackground;
+    .articleSectionGrid1{
+        img{
+            position: relative;
+            box-shadow: 1.2rem 1.3rem $primaryColor;
+            bottom: 1.5rem;
+        }
+    }
+    .articleSectionGrid4{
+        img{
+            position: relative;
+            box-shadow: -1.2rem 1.3rem $primaryColor;
+            top: 1.5rem;
+        }
+    }
+}
+
+.articleSectionGrid1,
+.articleSectionGrid2,
+.articleSectionGrid3,
+.articleSectionGrid4 {
+    display:flex;
+}
+.articleSectionGrid2{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 8rem;
+}
+.articleSectionGrid3{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 8rem;
+    text-align: right;
+}
+
+.articleSectionGrid4{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.readMore{
+    margin-top: 1rem;
+}
+
+/* ===================================
+FOOTER FOR HOME PAGE STUFF
+=====================================*/
+
+.bannerImage {
+    background: url(./assets/banner-image.jpg) no-repeat;
+    background-size: cover;
+    height: 30rem;
+}
+
+.referralProgram {
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .blogHeading{
+        text-align: center;
+    }
+    p {
+        text-align: center;
+        margin: 1rem 6rem;
+    }
+    .findOutMore{
+        margin: 1rem;
+    }
+}
+
+.copyrightMsg{
+    text-align: center;
+    background: #2c2c2c;
+    color: #fff;
+}
+
