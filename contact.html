@@ -10,18 +10,18 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400700&family=Playfair+Display+SC:ital,wght@1,900&display=swap"rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display+SC:ital,wght@1,900&display=swap" rel="stylesheet">   
 
     <!-- Font Awesome CDN -->
     
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v515.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4hKRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+   
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header class="backgroundContact">
-        <nav class="wrapper">
+        <nav class="wrapper backgroundContactGridItem1">
             <div>
                 <h2 class="logo">Beachstays</h2>
             </div>
@@ -32,41 +32,42 @@
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
-        <!-- <img src="./styles/assets/contact-image-1.jpg" alt="waves crashing on the beach during early dawn"> -->
-        <h1>Get in Touch</h1>
+        <div class="backgroundContactGridItem2">
+            <h1>Get in Touch</h1>
+        </div>
     </header>
 
-    <section>
-        <div>
-            <form action="">
-                <input type="text">
-                <label for=""></label>
+    <section class="contactSectionGrid wrapper">
+        <div class="contactSectionGridItem1">
+            <form action="" class="contactForm">
+                <label for="contactName" class="sr-only">Name</label>
+                <input type="name" id="contactName" placeholder="Name">
                 
-                <input type="text">
-                <label for=""></label>
+                <label for="contactEmail" class="sr-only">Email Address</label>
+                <input type="email" id="contactEmail" placeholder="Email Address">
                 
-                <input type="text">
-                <label for=""></label>
-                
-                <submit></submit>
+                <label for="contactMessage" class="sr-only">Message</label>
+                <textarea name="message" id="contactMessage" placeholder="Message"></textarea>
+
+                <button type="submit" class="submitButton">Submit</button>
             </form>
-            <div class="backgroundBlockContact"></div>
-            <div>
-                <ul class="socialMedia">
-                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-                </ul>
-                <h3 class="contactInfo">info@email.com</h3>
-                <p>123 - 456 - 7890
-                    123 Queen Street West,
-                    Unit 10
-                    Toronto, Ontario
-                    M5V2D5
-                </p>
-            </div>
         </div>
+        <div class="contactSectionGridItem2">
+            <ul class="socialMedia">
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+            </ul>
+            <h3 class="contactInfo">info@email.com</h3>
+            <p> <span class="lineBreak">123 - 456 - 7890</span>
+                <span class="lineBreak">123 Queen Street West,</span>
+                <span class="lineBreak">Unit 10</span>
+                <span class="lineBreak">Toronto, Ontario</span>
+                <span class="lineBreak">M5V2D5</span>
+            </p>
+        </div>
+    
     </section>
 
     <footer>
