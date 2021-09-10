@@ -427,7 +427,9 @@ nav {
   display: grid;
   grid-column: 1/span 3;
   grid-template-columns: 1fr 3fr;
-  grid-gap: 45rem;
+  -webkit-column-gap: 38%;
+     -moz-column-gap: 38%;
+          column-gap: 38%;
 }
 nav ul {
   display: -webkit-box;
@@ -675,7 +677,6 @@ BLOG FEATURE PAGE STUFF
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 15rem;
 }
 
 .blogImage img {
@@ -772,9 +773,9 @@ BLOG FEATURE PAGE STUFF
 .commentForm form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  -webkit-column-gap: 4rem;
-     -moz-column-gap: 4rem;
-          column-gap: 4rem;
+  -webkit-column-gap: 4%;
+     -moz-column-gap: 4%;
+          column-gap: 4%;
 }
 
 input {
@@ -826,9 +827,9 @@ CONTACT FORM STUFF
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto;
-  -webkit-column-gap: 13rem;
-     -moz-column-gap: 13rem;
-          column-gap: 13rem;
+  -webkit-column-gap: 22%;
+     -moz-column-gap: 22%;
+          column-gap: 22%;
 }
 
 .contactSectionGridItem1 {
@@ -881,4 +882,122 @@ CONTACT FORM STUFF
 .lineBreak::after {
   content: "\a";
   white-space: pre;
+}
+
+/* ===================================
+HOLY CRAP IT'S THE MEDIA QUERY STUFF
+=====================================*/
+@media (max-width: 1080px) {
+  /* General Styling */
+  /* Nav Styling */
+  /* Home Page Styling */
+  /* Blog Page Styling */
+  .blogArticle {
+    width: 76%;
+  }
+
+  .blogImage {
+    width: 70%;
+  }
+
+  /* Contact Page Styling */
+  .backgroundContactGridItem2 {
+    width: 36rem;
+  }
+}
+@media (max-width: 1080px) {
+  /* General Styling */
+  /* Nav Styling */
+  /* Home Page Styling */
+  /* Blog Page Styling */
+  .blogArticle {
+    width: 76.6%;
+  }
+
+  .blogImage {
+    width: 70%;
+  }
+
+  /* Contact Page Styling */
+  .backgroundContactGridItem2 {
+    width: 36rem;
+  }
+}
+@media (max-width: 950px) {
+  /* General Styling */
+  input {
+    grid-column: 1;
+  }
+
+  .submitButton {
+    grid-column: 1;
+  }
+
+  /* Nav Styling */
+  .header nav {
+    -webkit-column-gap: 43%;
+       -moz-column-gap: 43%;
+            column-gap: 43%;
+  }
+  .header .logo {
+    margin-left: 5rem;
+  }
+
+  /* Home Page Styling */
+  /* Blog Page Styling */
+  .blogGrid1 {
+    grid-template-columns: 1fr;
+  }
+
+  .blogImage {
+    width: 85%;
+  }
+
+  .blogArticle {
+    right: 10.3%;
+    padding: 10.3%;
+    width: 97%;
+  }
+
+  .sidebar article {
+    grid-template-columns: 1fr 1fr;
+  }
+  .sidebar aside {
+    display: none;
+  }
+
+  .blogGridItem2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1;
+  }
+
+  .commentSection {
+    margin-top: 2rem;
+  }
+
+  .commentSection.wrapper {
+    max-width: 100%;
+  }
+
+  .comments {
+    width: 80%;
+  }
+
+  .textAreaComment {
+    grid-column: 1;
+  }
+
+  /* Contact Page Styling */
+  .backgroundContactGridItem2 {
+    width: 36rem;
+  }
+
+  .contactSectionGridItem1 {
+    height: 38rem;
+  }
+
+  .contactForm .submitButton {
+    grid-column: 1/span 2;
+  }
 }

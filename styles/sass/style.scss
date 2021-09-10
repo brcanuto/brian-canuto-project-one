@@ -201,7 +201,7 @@ nav {
     display: grid;
     grid-column: 1 / span 3;
     grid-template-columns: 1fr 3fr;
-    grid-gap: 45rem;
+    column-gap: 38%;
     ul {
         display: flex;
         justify-content: space-evenly;
@@ -414,7 +414,7 @@ BLOG FEATURE PAGE STUFF
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: auto;
-    grid-gap: 15rem;
+    // column-gap: ;
 }
 
 .blogImage{
@@ -512,7 +512,7 @@ BLOG FEATURE PAGE STUFF
     form{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 4rem;
+        column-gap: 4%;
     }
 }
 
@@ -565,7 +565,7 @@ CONTACT FORM STUFF
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
-    column-gap: 13rem;
+    column-gap: 22%;
 }
 .contactSectionGridItem1{
     box-shadow: 1.2rem 2rem $primaryColor;
@@ -612,4 +612,122 @@ CONTACT FORM STUFF
 .lineBreak::after{
     content: "\a";
     white-space: pre;
+}
+
+
+/* ===================================
+HOLY CRAP IT'S THE MEDIA QUERY STUFF
+=====================================*/
+@media (max-width: 1080px){
+    /* General Styling */
+    
+    /* Nav Styling */
+    
+    /* Home Page Styling */
+    
+    /* Blog Page Styling */
+    .blogArticle{
+        width: 76%;
+    }
+    
+    .blogImage{
+        width: 70%;
+    }
+    /* Contact Page Styling */
+    .backgroundContactGridItem2{
+        width: 36rem;
+    }
+}
+
+@media (max-width: 1080px){
+/* General Styling */
+
+/* Nav Styling */
+
+/* Home Page Styling */
+
+/* Blog Page Styling */
+.blogArticle{
+    width: 76.6%;
+}
+
+.blogImage{
+    width: 70%;
+}
+/* Contact Page Styling */
+.backgroundContactGridItem2{
+    width: 36rem;
+}
+
+}
+
+@media (max-width: 950px){
+    /* General Styling */
+    input{
+        grid-column: 1;
+    }
+    .submitButton{
+        grid-column: 1;
+    }
+    /* Nav Styling */
+    .header{
+        nav{
+            column-gap: 43%;
+        }
+        .logo{
+            margin-left: 5rem;
+        }
+    }
+    
+    /* Home Page Styling */
+    
+    /* Blog Page Styling */
+    .blogGrid1{
+        grid-template-columns: 1fr;
+    }
+    .blogImage{
+        width: 85%;
+    }
+
+    .blogArticle{
+        right: 10.3%;
+        padding: 10.3%;
+        width: 97%;
+    }
+    .sidebar{
+        article{
+            grid-template-columns: 1fr 1fr;
+        }
+        aside{
+            display: none;
+        }
+    }
+    .blogGridItem2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row: 1;
+    }
+    .commentSection{
+        margin-top: 2rem;
+    }
+
+    .commentSection.wrapper{
+        max-width: 100%;
+    }
+    .comments{
+        width: 80%;
+    }
+    .textAreaComment{
+        grid-column: 1;
+    }
+    /* Contact Page Styling */
+    .backgroundContactGridItem2{
+        width: 36rem;
+    }
+    .contactSectionGridItem1{
+        height: 38rem;
+    }
+    .contactForm .submitButton{
+        grid-column: 1 / span 2;
+    }
 }
