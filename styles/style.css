@@ -362,6 +362,14 @@ button {
   font-size: 1.73rem;
 }
 
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-style: bold;
+}
+
 /* ===================================
 NAV STUFF
 =====================================*/
@@ -369,6 +377,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
+  max-height: 50rem;
 }
 header img {
   display: inline;
@@ -387,19 +396,25 @@ header .gridItem2 {
   margin-left: -8rem;
   z-index: 1;
 }
+header .logo {
+  margin-top: 1.4rem;
+}
 
 .backgroundHome {
   background: url(./assets/home-image-1.jpg) no-repeat;
   background-size: cover;
-  max-height: 50rem;
 }
 .backgroundHome .logo {
   color: #50E3C2;
   font-size: 1.73rem;
+  letter-spacing: 0;
+  margin-top: 0.5rem;
 }
 
 .backgroundBlog {
   background: url(./assets/blog-image-1.jpg) no-repeat;
+  background-size: cover;
+  height: 35rem;
 }
 
 .backgroundContact {
@@ -410,7 +425,7 @@ nav {
   display: grid;
   grid-column: 1/span 3;
   grid-template-columns: 1fr 3fr;
-  grid-gap: 40rem;
+  grid-gap: 45rem;
 }
 nav ul {
   display: -webkit-box;
@@ -637,4 +652,150 @@ FOOTER FOR HOME PAGE STUFF
   text-align: center;
   background: #2c2c2c;
   color: #fff;
+}
+
+/* ===================================
+BLOG HEADER STUFF
+=====================================*/
+.backgroundBlogGridItem2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* ===================================
+BLOG FEATURE PAGE STUFF
+=====================================*/
+.blogGrid1 {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 15rem;
+}
+
+.blogImage img {
+  position: relative;
+  bottom: 10rem;
+  -webkit-box-shadow: 1.2rem 2rem #50E3C2;
+          box-shadow: 1.2rem 2rem #50E3C2;
+}
+
+.blogArticle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-right: 0.4rem solid #50E3C2;
+  border-bottom: 0.4rem solid #50E3C2;
+  position: relative;
+  bottom: 9.5rem;
+  right: 2.1rem;
+  padding: 8rem;
+  margin-top: -3rem;
+  width: 65rem;
+}
+.blogArticle .postDate {
+  color: #063974;
+}
+
+.blogGridItem2 {
+  margin-top: 7rem;
+}
+
+.sidebar article h4 {
+  padding-bottom: 0.5rem;
+  color: #063974;
+}
+.sidebar article p {
+  padding-bottom: 0.5rem;
+}
+.sidebar article a {
+  color: #0c5f4c;
+}
+.sidebar article .sidebarLink {
+  padding-bottom: 0.5rem;
+}
+.sidebar ul {
+  color: #50E3C2;
+}
+.sidebar ul a {
+  color: #2c2c2c;
+}
+
+.commentSection {
+  margin-top: -3rem;
+}
+
+.comments {
+  width: 65rem;
+}
+
+.commentsHeading {
+  margin-bottom: 2rem;
+}
+
+.comment1,
+.comment2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.comment1 img {
+  width: 13rem;
+}
+
+.comment2 img {
+  width: 8rem;
+}
+
+.profilePicture {
+  padding: 1.2rem;
+}
+
+.postDate {
+  color: #063974;
+  margin-bottom: 1rem;
+}
+
+.commentForm {
+  width: 65rem;
+}
+.commentForm form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 4rem;
+     -moz-column-gap: 4rem;
+          column-gap: 4rem;
+}
+
+input {
+  border-style: none;
+  border-bottom: 0.1rem solid #50E3C2;
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.textAreaComment {
+  height: 16rem;
+  resize: none;
+  margin-bottom: 3rem;
+  padding: 3rem 0 0 2rem;
+  border: 0.1rem solid #50E3C2;
+  grid-column: 1/span 2;
+}
+
+.submitButton {
+  grid-column: 1/span 2;
+  background-color: #063974;
+  color: #fff;
+  border: none;
+  margin-bottom: 8rem;
+  padding: 0.7rem;
 }

@@ -22,7 +22,7 @@
 <body>
     <!-- Header Section -->
     <header class="backgroundBlog">
-        <nav class="wrapper">
+        <nav class="wrapper blogGridItem1">
             <div>
                 <h2 class="logo">Beachstays</h2>
             </div>
@@ -33,23 +33,24 @@
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
-        <!-- <img src="./styles/assets/blog-image-1.jpg" alt="Drove view of a cove with white sands and clear water"> -->
-        <h1>Blog</h1>
+        <div class="backgroundBlogGridItem2">
+            <h1>Blog</h1>
+        </div>
     </header>
         <!-- Feature Blog -->
-    <section>
-        <div>
-            <aside>
+    <section class="blogGrid1">
+        <div class="blogGridItem1">
+            <aside class="blogImage">
                 <img src="./styles/assets/post-image.jpg" alt="Night time view of one of entrances to a lodging with tall plants beside a bridge to get into the lodging">
                 <div class="backgroundBlockBlog"></div>
             </aside>
-            <article>
+            <article class="blogArticle">
                 <h3 class="blogHeading">Five days of ocean seas</h3>
                 <h5 class="postDate"><span class="italic"> January 21th, 2019</span> by <span class="bold">Bora</span></h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam obcaecati, distinctio eius facilis accusantium eos non ad voluptates est molestias saepe fugiat deleniti amet dolores aspernatur totam illo sint. Inventore pariatur iusto voluptates voluptatibus autem error vel quo. Optio ipsa veritatis est sit? Rem nulla voluptate molestiae ipsam inventore aliquam alias magni velit neque praesentium quas maiores asperiores impedit sequi, in dolore ipsum enim dolores vero dolorem culpa ut repellat eum eaque! Corporis reiciendis quos dignissimos nulla nemo sint beatae voluptates quaerat molestias accusantium quas ea, soluta nesciunt minima ex, necessitatibus id nisi laudantium magnam quibusdam tempora ipsa eos. Dicta dolorum modi ipsam sit iste iusto beatae deserunt maxime repellendus ducimus repellat, et mollitia illo consequatur. Odit, labore ducimus perspiciatis perferendis deserunt voluptatem assumenda vitae veritatis facere accusantium. Iusto mollitia aspernatur necessitatibus amet. Asperiores natus enim ipsa vitae id, eveniet minima culpa. Corrupti, laudantium perferendis. Iste dignissimos cumque laborum vitae amet, adipisci soluta sequi labore, illo reiciendis voluptate libero nam dolores, fugiat quibusdam officiis. Neque expedita quidem illo velit voluptatum corrupti officiis. Ad adipisci quisquam in expedita dicta aliquid omnis tempora molestias voluptas modi dolore cumque voluptatem reiciendis beatae non iure nisi numquam accusamus, officia fugiat quas laborum. Cumque, temporibus quas quidem iure, magni accusamus facere molestiae fuga voluptates, vero quaerat. Minima voluptatibus culpa quo nam est distinctio perspiciatis repellendus temporibus, quidem harum similique possimus corporis, sit pariatur beatae obcaecati excepturi sapiente nemo labore autem delectus a. Iste alias pariatur, in iure earum deleniti cum maxime, dolor vel at consectetur?</p>
             </article>
         </div>
-        <div class="sidebar">
+        <div class="sidebar blogGridItem2">
             <aside><img src="./styles/assets/sidebar-image.jpg" alt="lodging by the beach with lushious trees around it"></aside>
             <article>
                 <h4>Our mission</h4>
@@ -69,36 +70,40 @@
     <!-- Comments Section -->
     
     <footer>
-        <section>
+        <section class="commentSection wrapper">
             <div class="comments">
                 <h3 class="commentsHeading">Comments:</h3>
-                <div>
-                    <div><img src="./styles/assets/comment-image.jpg" alt="Profile picture of a man with a beard"></div>
+                <div class="comment1">
+                    <div class="profilePicture">
+                        <img src="./styles/assets/comment-image.jpg" alt="Profile picture of a man with a beard">
+                    </div>
                     <div>
                         <h5 class="postDate">Tuesday October 9th, 2019 by Reyansh</h5>
-                        <p></p>
+                        <p>Fusce vehicula dolor arcu, sit amet bladit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc  sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus.. </p>
                     </div>
                 </div>
-                <div>
-                    <div><img src="./styles/assets/comment-image2.jpg" alt="Profile picture of a woman with trendry sunglass and her hair tied back"></div>
+                <div class="comment2">
+                    <div class="profilePicture">
+                        <img src="./styles/assets/comment-image2.jpg" alt="Profile picture of a woman with trendry sunglass and her hair tied back">
+                    </div>
                     <div>
                         <h5 class="postDate">Wednesday October 10th, 2019 by Olivia</h5>
-                        <p></p>
+                        <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula.</p>
                     </div>
                 </div>
             </div>
             <div class="commentForm">
-                <form action="">
-                    <input type="text">
-                    <label for=""></label>
+                <form action="submit">
+                    <label for="name" class="sr-only">Name</label>
+                    <input class="inputName" type="name" placeholder="Name" required="true" id="name">
                     
-                    <input type="text">
-                    <label for=""></label>
+                    <label for="" class="sr-only">Email</label>
+                    <input class="inputEmail" type="email" placeholder="Email" required="true" id="email">
                     
-                    <input type="text">
-                    <label for=""></label>
+                    <label for="comment" class="sr-only">comment</label>
+                    <textarea class="textAreaComment" type="text" placeholder="Comment" required="true" id="comment"></textarea>
                     
-                    <submit>Post Comment</submit>
+                    <button type="submit" class="submitButton">Post Comment</button>
                 </form>
             </div>
         </section>
