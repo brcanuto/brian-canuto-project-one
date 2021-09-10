@@ -445,6 +445,9 @@ nav ul li {
   margin: 0 0.5rem;
   padding: 0.6rem;
 }
+nav ul li::before {
+  color: #fff;
+}
 
 a {
   text-decoration: none;

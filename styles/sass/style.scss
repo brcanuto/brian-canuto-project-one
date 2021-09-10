@@ -212,6 +212,9 @@ nav {
             margin: 0 0.5rem;
             padding: 0.6rem;
         }
+        li::before {
+            color: #fff;
+        }
     }
 }
 
