@@ -3,9 +3,10 @@
 @import "normalize";
 @import "variables";
 @import "nav";
+@import "popup";
 
 /* This is where the css starts */
-
+ 
 /* ===================================
 GENERAL STUFF
 =====================================*/
@@ -734,3 +735,5 @@ HOLY CRAP IT'S THE MEDIA QUERY STUFF
         grid-column: 1 / span 2;
     }
 }
+
+
